@@ -64,6 +64,7 @@ public class MainActivity extends Activity {
 		}
 	}
 	
+	// Submit button goes to next activity
 	public void onButtonClick(View view) {
         Intent intent = new Intent(MainActivity.this, ReturnScreen.class);
         startActivity(intent);
