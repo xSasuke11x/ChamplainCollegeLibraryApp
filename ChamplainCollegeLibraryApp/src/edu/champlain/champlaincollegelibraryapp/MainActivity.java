@@ -2,13 +2,11 @@ package edu.champlain.champlaincollegelibraryapp;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
-import java.util.ArrayList;
-import java.util.List;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -64,9 +62,12 @@ public class MainActivity extends Activity {
 		public void onNothingSelected(AdapterView<?> arg0) {
 			// TODO Auto-generated method stub
 		}
-		 
-	}  
-
+	}
+	
+	public void onButtonClick(View view) {
+        Intent intent = new Intent(MainActivity.this, ReturnScreen.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
