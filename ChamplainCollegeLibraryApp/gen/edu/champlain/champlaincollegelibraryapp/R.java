@@ -50,6 +50,7 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int author=0x7f050007;
         public static final int callNumber=0x7f05000b;
+        public static final int empty=0x7f05000c;
         public static final int entry_prompt=0x7f050004;
         public static final int location=0x7f050009;
         public static final int name=0x7f050006;
