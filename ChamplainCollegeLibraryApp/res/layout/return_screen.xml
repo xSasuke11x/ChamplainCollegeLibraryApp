@@ -58,4 +58,13 @@
         android:text="@string/callNumber"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/return"
+        android:onClick="onButtonClick" />
+
 </RelativeLayout>

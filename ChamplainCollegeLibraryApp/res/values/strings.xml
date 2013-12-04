@@ -5,6 +5,7 @@
     <string name="action_settings">Settings</string>
 	<string name="title_activity_spinner">SpinnerActivity</string> 
 	<string name="spinner_title">What will you search by?</string>
+    
     <string-array name="entry_array">
         <item>Keyword</item>
         <item>Author</item>
@@ -13,8 +14,10 @@
         <item>ISBN/ISSN</item>
         <item>Call Number</item>
     </string-array>
+    
     <string name="entry_prompt">Choose an Entry Type</string>
     <string name="submit">Submit</string>
+    <string name="return">Return</string>
     <string name="name">Name: </string>
     <string name="author">Author: </string>
     <string name="type">Type: </string>

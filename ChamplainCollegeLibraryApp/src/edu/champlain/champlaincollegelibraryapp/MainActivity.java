@@ -11,9 +11,31 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemSelectedListener;
+import java.sql.DriverManager;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class MainActivity extends Activity {
 
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
+		try {
+	        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
+	        Connection conn =DriverManager.getConnection("jdbc:sqlserver://KENNEDY-PC\\SQLEXPRESS;databaseName=ChamplainLibrary");                   
+
+	        System.out.println("connected");
+	        Statement statement=conn.createStatement();
+	        ResultSet resultSet=statement.executeQuery("select * from [user]");
+	        while(resultSet.next()){
+	            System.out.println(" "+resultSet.getString(1)+" "+resultSet.getNString(2));
+	        }
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
+	
 	private Spinner spinner1;
 	private Button btnSubmit;
 	
