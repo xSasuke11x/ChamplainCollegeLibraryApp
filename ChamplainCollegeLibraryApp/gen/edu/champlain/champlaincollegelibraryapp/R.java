@@ -37,6 +37,7 @@ public final class R {
         public static final int textViewNumber=0x7f090008;
         public static final int textViewStatus=0x7f090006;
         public static final int textViewType=0x7f090004;
+		public static int listView1;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
